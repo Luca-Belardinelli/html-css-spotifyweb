@@ -1,0 +1,48 @@
+/* regole generali di pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+
+ /* blocco trasparte header */
+ #wrapper{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    
+ }
+
+
+
+/* navigazione parte sinistra */
+nav{
+    width: 200px;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+
+
+
+/*contenuto principale */
+main{
+    height: 100%;
+    background-color:black ;
+    width: calc(100% - 200px);
+}
+
+
+
+ /*controller */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+
+
+}
