@@ -3,21 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotifyweb</title>
 </head>
 
 <body>
-    <!-- blocco trasparente header -->
+
     <div id="wrapper">
+        
 
         <!-- navigazione parte sinistra -->
          <nav>
+          <img id="spotifylogo" src="./img/logo.svg" alt="">
+               <div> 
+                    <ul>
+                        <li class="icon"><img src="./img/home.svg" alt=""><span>Home</span></li>
+                        <li class="icon"><img src="./img/search.svg" alt=""><span>Cerca</span></li>
+                        <li class="icon"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></li>
+                    </ul>
+               </div>
+
+            <div class="lista secondaria">
+                <p><strong>PLAYLIST</strong></p>
+                <span>Crea Playlist</span>
+
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+                
+            </div>
+
+
+            <div class="profilo">
+                <img src="./img/download.svg" alt=""> <span>Installa app</span>
+                <hr class="riga">
+                <img src="./img/profile.svg" alt=""> <span>John Doe</span>
+            </div>
+
+          
 
          </nav>
 
          <!-- contenuto principale -->
           <main>
+            <div class="contenutotrasparente">
+                <div class="upgrade">
+                  <button>EFFETTUA L'UPGRADE</button>
+                </div>
+            </div>
+
+            <div>
+              <ul class="generemusicale">
+                    <li>IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
+              </ul>
+            </div>
 
 
           </main>
