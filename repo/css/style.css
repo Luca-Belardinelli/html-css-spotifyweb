@@ -1,12 +1,26 @@
+/* regole generali di pagina */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+ }
+
+ /* blocco trasparte header */
 
 
-    #wrapper{
-        background-color: aqua;
-        width: 100%;
-        height: 500px;
-    }
+
+/* navigazione parte sinistra */
+
+
+
+
+/*contenuto principale */
+
+
+
+ /*controller */
+
+#controller {
+
+}
