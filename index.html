@@ -19,19 +19,20 @@
 
         <!-- navigazione parte sinistra -->
          <nav>
-          <img id="spotifylogo" src="./img/logo.svg" alt="">
-               <div> 
+            <div class="listasecondaria"> 
+                <img id="spotifylogo" src="./img/logo.svg" alt="">
                     <ul>
                         <li class="icon"><img src="./img/home.svg" alt=""><span>Home</span></li>
                         <li class="icon"><img src="./img/search.svg" alt=""><span>Cerca</span></li>
                         <li class="icon"><img src="./img/libreria.svg" alt=""><span>La tua libreria</span></li>
                     </ul>
-               </div>
+               
 
-            <div class="listasecondaria">
-                <p><strong>PLAYLIST</strong></p>
-                <span>Crea Playlist</span>
-            </div>
+                <div class="crea">
+                  <p><strong>PLAYLIST</strong></p>
+                  <i class="fa-solid fa-plus"></i><span>Crea Playlist</span>
+                </div>
+            
 
 
 
@@ -44,14 +45,14 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                 </ul>
-                
+            </div>   
             
 
 
             <div class="profilo">
-                <img src="./img/download.svg" alt=""> <span>Installa app</span>
+                <img id="download" src="./img/download.svg" alt=""> <span>Installa app</span>
                 <hr class="riga">
-                <img src="./img/profile.svg" alt=""> <span>John Doe</span>
+                <img id="omino" src="./img/profile.svg" alt=""> <span><strong>John Doe</strong></span>
             </div>
 
           
@@ -109,10 +110,10 @@
 
             <!-- seconda lista copertine -->
 
-            <div class="copertine">
+            <div class="mix">
                 <h3>Creato per John Doe</h3>
                 <span>Più ascolti, più saranno i suggerimenti.</span>
-                <ul class="copertinefoto">
+                <ul class="mixfoto">
                     <li><img src="./img/radar.jpeg" alt="">
                        <p class="white">Release Radar</p>
                     </li>
@@ -125,10 +126,10 @@
 
             <!-- terza lista copertine -->
 
-            <div class="copertine">
+            <div class="mix">
                 <h3>Artisti più popolari</h3>
                 <span>Più ascolti, più saranno i suggerimenti.</span>
-                <ul class="copertinefoto">
+                <ul class="mixfoto">
                     <li><img class="circular" src="./img/youg.jpeg" alt=""></li>
                     <li><img class="circular" src="./img/einaudi.jpeg" alt=""></li>
                 </ul>
@@ -153,7 +154,7 @@
             <i class="fa-regular fa-circle-play"></i>
             <i class="fa-solid fa-forward-step"></i>
             <i class="fa-solid fa-arrow-rotate-right"></i>
-            <span>0:25</span><hr id="centrale"><span>4:35</span>
+            <span class="orario">0:25</span><hr id="centrale"><span">4:35</span>
         </div>
         <div class="nav dx">
             <i class="fa-solid fa-bars"></i>
