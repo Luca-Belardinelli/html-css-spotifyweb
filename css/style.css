@@ -24,6 +24,8 @@
 
 
 
+
+
 /* navigazione parte sinistra */
 nav{
     width: 250px;
@@ -39,11 +41,15 @@ nav{
     justify-content: space-between;
 }
 
+
+
+
 #spotifylogo{
     width: 150px;
     margin-bottom: 25px;
     margin-top: 20px;
 }
+
 
 
 .icon{
@@ -91,7 +97,11 @@ nav strong{
 
 .profilo{
     margin-bottom: 10px;
-    
+}
+
+.datiprofilo{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -111,6 +121,7 @@ nav strong{
 
 .profilo span{
     font-weight: 800;
+    align-items: center;
 }
 
 
@@ -131,6 +142,7 @@ main{
     width: 100%;
     background-color:#080B12;
     
+    
 }
 
 .upgrade{
@@ -148,10 +160,20 @@ button{
     margin-right: 7px;
     padding: 12px 35px;
     border-radius: 20px;
+    
 }
 
 
+.upgrade:hover button{
+    padding: 14px 37px;
+}
+
+
+
+
 /* menu principale */
+
+
 
 .generemusicale{
     display: flex;
@@ -160,6 +182,17 @@ button{
     color:#7D7F84;
     font-weight: 700;
     gap: 30px;
+}
+
+
+
+.green{
+    background-color:#A2EF2E;
+    width: 40px;
+    height: 2px;
+    border-radius: 30px;
+    margin-left: 475px;
+    margin-top: 3px;
 }
 
 
@@ -182,18 +215,6 @@ h3{
    
 }
 
-
-.copertine{
-    padding-top: 30px;
-    padding-left: 20px;
-    width: 100%;
-    display: flex;
-}
-
-.direzione{
-    width: 17%;
-}
-
 .white{
     text-align: center;
     color: white;
@@ -209,31 +230,59 @@ h3{
     font-weight: 600;
 }
 
-.copertine img{
-    width: 90% ;
+.copertine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
 }
 
-
-.card{
-    display: none;
+.direzione{
+    width: 15%;
 }
+
+.contenitore{
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.contenitore img{
+   max-width:100%;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: aqua;
+    
+}
+
 
 
 /* seconda lista copertine */
 
 .mix{
-    padding-top: 30px;
-    padding-left: 20px;
     display: flex;
-    width: 40%;
+    gap:30px;
+    margin-left: 15px;
 }
 
 .mixfoto{
-    width: 42%;
+    width: 15%;
 }
 
 .mixfoto img{
-    width: 90%;
+    margin-top: 20px;
+    max-width: 100%;
 }
 
 
@@ -253,64 +302,143 @@ footer{
     height: 100px;
     background-color: rgb(50, 52, 52);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 }
 
-.navsx{
+/* navigazione sinistra */
 
-    display: flex;
-    align-items: center;
 
+.brano{
+  display: flex;
+  align-items: center;
 }
-
 
 footer img{
-    width: 40px;
+    width: 45px;
+    margin-right: 15px;
 }
 
-
-.fa-regular{
-    color: #757575;
-    font-size: 20px;
-    padding: 0px 10px;
+.sinister{
+    margin-right: 60px;
 }
 
-
-.fa-circle-play{
+#artista{
     color: white;
-    font-size:40px;
-    padding: 0 20px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.fa-shuffle{
-    font-size: 30px;
-    padding: 0 15px;
+
+#nome{
+    color: #858585;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fa-heart{
+   color: #858585;
+   margin-right: 20px;
+   font-size: 22px;
+}
+
+.fa-folder{
+    color: #858585;
+    font-size: 22px;
+}
+
+
+/*  navigazione centrale */
+
+.navcentrale{
+    margin-top: 10px;
+}
+
+
+.riproduzione{
+    font-size: 25px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start{
+    font-size: 40px;
+    margin: 0 20px;
 }
 
 .fa-backward-step{
-    font-size: 30px;
-    padding: 0 15px;
-    color: white;
+    margin: 0 40px;
 }
 
 
 .fa-forward-step{
-    font-size: 30px;
-    padding: 0 15px;
+    margin: 0 40px;
+}
+
+/* barra riproduzione */
+
+
+.timing{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.timing p{
     color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.bar{
+    background-color:#858585 ;
+    width: 600px;
+    height: 5px;
+    border-radius: 30px;
+    margin: 0 40px;
+}
+
+.scrolling{
+    background-color:white ;
+    height: 5px;
+    width: 100px;
+    border-radius: 30px;
 }
 
 
-.fa-arrow-rotate-right{
-    font-size: 30px;
-    padding: 0 15px;
-    color: white;
+/* navigazione destra */
+
+.navdx{
+    display: flex;
+    align-items: center;
 }
 
 
 
+.settings{
+    color: white;
+}
+
+.fa-desktop{
+    margin: 0 20px;
+}
 
 
+.barvolume{
+    background-color:#858585 ;
+    width: 150px;
+    height: 5px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
 
+.scrollingvolume{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    border-radius: 30px;
+}
