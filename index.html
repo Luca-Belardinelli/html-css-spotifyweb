@@ -52,7 +52,7 @@
             <div class="profilo">
                 <img id="download" src="./img/download.svg" alt=""> <span>Installa app</span>
                 <hr class="riga">
-                <img id="omino" src="./img/profile.svg" alt=""> <span><strong>John Doe</strong></span>
+                <img id="omino" src="./img/profile.svg" alt=""> <span id="john"><strong>John Doe</strong></span>
             </div>
 
           
@@ -79,60 +79,118 @@
               </ul>
             </div>
 
-           <hr class="border">
-
           <!-- prima lista copertine -->
-            <div class="copertine">
-                <h3>RECENTLY PLAYED</h3>
-                <ul class="copertinefoto">
-                    <li><img src="./img/metal_lifting.jpg" alt="">
-                       <p class="white">Heavy Metal</p><p class="grey">subtitle</p>
-                    </li>
-                    <li><img src="./img/stranger.jpeg" alt=""><p class="white">Straner Things, Vol. <br> 1 (a Netflix Original <br>
-                        Series Soundtrack)</p><p class="grey">Kyle Dixon & Michal Stein</p>
-                    </li>
-                    <li><img src="./img/aquietplace.jpeg" alt="">
-                        <p class="white" >Aquiet place</p><p class="grey">Subtitle</p>
-                    </li>
-                    <li><img src="./img/split.jpeg" alt="">
-                        <p class="white">Split</p><p class="grey">Subtitle</p>
-                    </li>
-                    <li><img src="./img/cure.jpeg" alt="">
-                        <p class="white">A cure for wellness</p><p class="grey">Subtitle</p>
-                    </li>
-                    <li><img src="./img/sinister.jpeg" alt="">
-                        <p class="white">Sinester</p><p class="grey">Subtitle</p>
-                    </li>
 
-                </ul>
+          <h3>Recently played</h3>
+
+            <div class="copertine">
+              
+                <div class="direzione">
+                    <img src="./img/metal_lifting.jpg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                      <p class="white">Heavy Metal</p><p class="grey">subtitle</p>
+                    </div>
+                </div>
+
+                <div class="direzione">
+                    <img src="./img/stranger.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white">Straner Things, Vol. <br> 1 (a Netflix Original <br>
+                        Series Soundtrack)</p><p class="grey">Kyle Dixon & Michal Stein</p>
+                    </div>
+                </div>
+
+                <div class="direzione">
+                    <img src="./img/aquietplace.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white" >Aquiet place</p><p class="grey">Subtitle</p>
+                    </div>
+                </div>
+
+
+                <div class="direzione">
+                    <img src="./img/split.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white">Split</p><p class="grey">Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="direzione">
+                    <img src="./img/cure.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white">A cure for wellness</p><p class="grey">Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="direzione">
+                    <img src="./img/sinister.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white">Sinester</p><p class="grey">Subtitle</p>
+                    </div>
+                </div>
+            
 
             </div>
 
             <!-- seconda lista copertine -->
 
+            <h3>Creato per John Doe</h3>
+            <span class="span">Più ascolti, più saranno i suggerimenti.</span>
+
             <div class="mix">
-                <h3>Creato per John Doe</h3>
-                <span>Più ascolti, più saranno i suggerimenti.</span>
-                <ul class="mixfoto">
-                    <li><img src="./img/radar.jpeg" alt="">
-                       <p class="white">Release Radar</p>
-                    </li>
-                    <li><img src="./img/mixdaily.jpeg" alt="">
+                <div class="mixfoto">
+                    <img src="./img/radar.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
+                        <p class="white">Release Radar</p>
+                    </div>
+                </div>
+
+                <div class="mixfoto">
+                    <img src="./img/mixdaily.jpeg" alt="">
+                    <div class="card">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div>
                         <p class="white">Daily Mix 1 </p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
 
             </div>
 
             <!-- terza lista copertine -->
 
+            <h3>Artisti più popolari</h3>
+            <span class="span">Più ascolti, più saranno i suggerimenti.</span>
+
             <div class="mix">
-                <h3>Artisti più popolari</h3>
-                <span>Più ascolti, più saranno i suggerimenti.</span>
-                <ul class="mixfoto">
-                    <li><img class="circular" src="./img/youg.jpeg" alt=""></li>
-                    <li><img class="circular" src="./img/einaudi.jpeg" alt=""></li>
-                </ul>
+                <div class="mixfoto">
+                    <img class="circular" src="./img/youg.jpeg" alt="">
+                </div>
+
+                <div class="mixfoto">
+                     <img class="circular" src="./img/einaudi.jpeg" alt="">
+                </div>
 
             </div>
 
@@ -144,23 +202,24 @@
 
     <!-- controller finale footer -->
      <footer>
-        <div class="nav sx">
+        <div class="navsx">
+            <img src="./img/sinister.jpeg" alt="">
+            <p>Sinister</p>
+            <p>Brano Nome</p>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-regular fa-folder"></i>
         </div>
-        <div class="nav centrale">
+        <div class="navcentrale">
             <i class="fa-solid fa-shuffle"></i>
             <i class="fa-solid fa-backward-step"></i>
             <i class="fa-regular fa-circle-play"></i>
             <i class="fa-solid fa-forward-step"></i>
             <i class="fa-solid fa-arrow-rotate-right"></i>
-            <span class="orario">0:25</span><hr id="centrale"><span">4:35</span>
         </div>
-        <div class="nav dx">
+        <div class="navdx">
             <i class="fa-solid fa-bars"></i>
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i> 
-            <hr id="dx">
         </div>
        
 
