@@ -116,6 +116,17 @@ button{
     border-radius: 20px;
 }
 
+
+.border{
+    border: solid 1px #9BE42D;
+    width: 2%;
+    position: relative;
+    left: 480px;
+    margin-top: 5px;
+}
+
+/* menu principale */
+
 .generemusicale{
     display: flex;
     justify-content: center;
@@ -126,23 +137,50 @@ button{
 }
 
 
+
+/* prima lista copertine */
+
 .copertine{
     padding-top: 50px;
     padding-left: 20px;
     width: 100%;
 }
 
-.copertine h3{
-    padding-bottom: 20px;
+.white{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.grey{
+    text-align: center;
+    color:#555555;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+ h3{
     color: white;
 }
 
-.copertineimg{
+.copertine span{
+    color:#555555;
+}
+
+.copertinefoto{
+    padding-top: 20px;
     display: flex;
 }
 
-.copertineimg img{
+.copertinefoto img{
     width: 90%;
+}
+
+.circular{
+    border-radius: 50%;
 }
 
 
@@ -153,6 +191,50 @@ footer{
     width: 100%;
     height: 100px;
     background-color: rgb(50, 52, 52);
-
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+.fa-regular{
+    color: #757575;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.fa-solid{
+    color: white;
+    padding: 0 10px;
+}
+
+
+.fa-circle-play{
+    color: white;
+    font-size:40px;
+    padding: 0 20px;
+}
+
+.fa-shuffle{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+.fa-backward-step{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+
+.fa-forward-step{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+
+.fa-arrow-rotate-right{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+
