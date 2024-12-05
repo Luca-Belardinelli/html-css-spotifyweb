@@ -43,12 +43,12 @@ nav{
 
 
 
-
 #spotifylogo{
     width: 150px;
     margin-bottom: 25px;
     margin-top: 20px;
 }
+
 
 
 
@@ -293,10 +293,9 @@ h3{
 }
 
 .card {
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     position: absolute;
     top:0;
     left:0;
@@ -312,8 +311,12 @@ h3{
     
 }
 
+/* hover */
+
 .contenitore:hover .card{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     background-color: rgba(0, 0, 0, 0.5) ; 
 }
 
@@ -398,10 +401,6 @@ footer img{
     border-bottom: 1px solid white;
 }
 
-/* hover */
- .navsx :hover{
-    color: white;
-} 
 
 .fa-heart{
    color: #858585;
@@ -414,6 +413,15 @@ footer img{
     font-size: 22px;
 }
 
+/* hover */
+.navsx :hover .fa-heart{
+    color: white; 
+} 
+
+
+.navsx :hover .fa-folder{
+    color: white;
+}
 
 /*  navigazione centrale */
 
@@ -435,6 +443,12 @@ footer img{
     margin: 0 20px;
 }
 
+/* hover */
+
+.navcentrale :hover #start{
+    transform: scale(1.1);
+}
+
 .fa-backward-step{
     margin: 0 40px;
 }
@@ -452,6 +466,7 @@ footer img{
     align-items: center;
     margin-top: 15px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .timing p{
@@ -475,7 +490,33 @@ footer img{
     border-radius: 30px;
 }
 
-:hover
+
+.progress {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 22%; 
+    display: none;
+  }
+
+  /* hover */
+
+  .navcentrale :hover .progress {
+   display: block;
+
+  }
+
+/* hover */
+
+.navcentrale :hover .scrolling{
+    background-color: #A2EF2E;
+}
 
 
 /* navigazione destra */
@@ -495,6 +536,12 @@ footer img{
     margin: 0 20px;
 }
 
+.volume{
+    position: relative;
+    
+}
+
+
 
 .barvolume{
     background-color:#858585 ;
@@ -510,3 +557,43 @@ footer img{
     height: 5px;
     border-radius: 30px;
 }
+
+.progress-thumb {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 26%; 
+    display: none;
+  }
+
+  /* hover */
+
+  .navdx :hover .progress-thumb {
+   display: block;
+
+  }
+
+
+
+/* hover */
+.navdx :hover .scrollingvolume{
+    background-color: #A2EF2E;
+}
+
+
+
+/* 1440px - 1425px: Large screens */
+@media (max-width: 1440px) {
+
+ 
+
+}
+
+
+
+
+
