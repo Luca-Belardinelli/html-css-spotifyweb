@@ -189,7 +189,7 @@ button{
     font-size: 13px;
     font-weight: 600;
     margin-top: 20px;
-    margin-right: 7px;
+    margin-right: 11px;
     padding: 12px 35px;
     border-radius: 20px;
     
@@ -293,17 +293,30 @@ h3{
 }
 
 .card {
+
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     top:0;
-    left: 0;
+    left:0;
     right: 0;
     bottom: 0;
     z-index: 20;
-    background-color: aqua;
+    display: none;
+}
+
+#place{
+    color: white;
+    font-size: 50px;
     
 }
+
+.contenitore:hover .card{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5) ; 
+}
+
 
 
 
@@ -363,10 +376,7 @@ footer img{
     margin-right: 60px;
 }
 
-/* hover */
-.sinister :hover{
-    color: white;
-}
+
 
 #artista{
     color: white;
@@ -377,14 +387,21 @@ footer img{
 
 #nome{
     color: #858585;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
 }
 
+
 /* hover */
-.navsx :hover{
+.navsx :hover #nome{
     color: white;
+    border-bottom: 1px solid white;
 }
+
+/* hover */
+ .navsx :hover{
+    color: white;
+} 
 
 .fa-heart{
    color: #858585;
@@ -457,6 +474,8 @@ footer img{
     width: 100px;
     border-radius: 30px;
 }
+
+:hover
 
 
 /* navigazione destra */
