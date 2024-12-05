@@ -59,12 +59,26 @@ nav{
     padding-bottom: 10px;
 }
 
+#home{
+    color: white;
+}
+
+/* hover */
+.icon :hover {
+    color: white;
+}
+
 nav span{
     margin-left: 10px;
 }
 
 .crea{
     margin-top: 15px;
+}
+
+/* hover */
+.crea :hover {
+    color: white;
 }
 
 nav strong{
@@ -80,11 +94,24 @@ nav strong{
     color: #000000;
 }
 
+/* hover */
+
+.fa-plus:hover{
+    background-color: white;
+    color: #000000;
+}
+
 
 .playlist li{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+/* hover */
+.playlist li:hover {
+    color: white;
+}
+
 
 
 .riga{
@@ -107,6 +134,11 @@ nav strong{
 
 #download{
     width: 15px;
+}
+
+/* hover */
+.datiprofilo :hover {
+   color: white;
 }
 
 #omino{
@@ -146,8 +178,8 @@ main{
 }
 
 .upgrade{
-    display: flex;
-    justify-content: flex-end;
+     display: flex;
+    justify-content: flex-end; 
 }
 
 button{
@@ -163,9 +195,10 @@ button{
     
 }
 
-
+/* hover */
 .upgrade:hover button{
-    padding: 14px 37px;
+    transform: scale(1.1);
+
 }
 
 
@@ -182,6 +215,12 @@ button{
     color:#7D7F84;
     font-weight: 700;
     gap: 30px;
+}
+
+
+/* hover */
+.generemusicale li:hover {
+    color: white;
 }
 
 
@@ -324,6 +363,11 @@ footer img{
     margin-right: 60px;
 }
 
+/* hover */
+.sinister :hover{
+    color: white;
+}
+
 #artista{
     color: white;
     font-weight: 600;
@@ -335,6 +379,11 @@ footer img{
     color: #858585;
     font-size: 12px;
     font-weight: 600;
+}
+
+/* hover */
+.navsx :hover{
+    color: white;
 }
 
 .fa-heart{
