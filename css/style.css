@@ -49,6 +49,10 @@ nav{
     margin-top: 20px;
 }
 
+#logomobile{
+    display: none;
+}
+
 
 
 
@@ -504,10 +508,8 @@ footer img{
     height: 12px;
     background: #fff;
     border-radius: 50%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
     left: 22%; 
     display: none;
   }
@@ -621,14 +623,113 @@ footer img{
     }
 
     .copertine{
-        gap:20px
-        
+        display: flex;
+        justify-content: unset;
+        gap: 10px;
+        margin-left: 20px;
     }
 
     .direzione{
-        width: 20%;
+        width: 23%;
+        
     }
 
+    .mix{
+        gap: 10px;
+    }
+
+    .mixfoto{
+        width: 23%;
+    }
+
+    .span{
+        font-size: 15px;
+    }
+
+    footer{
+        padding: 0 10px;
+    }
+
+    .sinister{
+        margin-right: 40px;
+    }
+
+    footer img{
+        width: 40px;
+        margin-right:10px ;
+    }
+
+    .fa-heart{
+        font-size: 15px;
+    }
+
+    .fa-folder{
+        font-size: 15px;
+    }
+
+    .bar{
+        width: 250px;
+        margin: 0 20px;
+        height: 3px;
+    }
+
+    .scrolling{
+        height: 3px;
+        width: 40px;
+    }
+
+
+    #start{
+        margin: 0 10px;
+        font-size: 30px;
+    }
+
+    .fa-backward-step{
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    .fa-forward-step{
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    .fa-shuffle{
+        font-size:20px
+    }
+
+    .fa-arrow-rotate-right{
+        font-size: 20px;
+    }
+
+
+    #artista{
+        font-size: 12px;
+    }
+
+    .fa-bars{
+        font-size: 13px;
+    }
+
+    .fa-desktop{
+        font-size: 13px;
+        margin: 0 10px;
+    }
+
+    .fa-volume-high{
+        font-size: 13px;
+    }
+
+
+    .barvolume{
+        width: 120px;
+        height: 3px;
+    }
+
+    .scrollingvolume{
+        height: 3px;
+        width: 20px;
+    }
 
 
 
@@ -640,12 +741,154 @@ footer img{
 }
 
 
-
-
-
-
 /* 639px - 624px: Large screens */
+@media (max-width: 639px) {
 
+    .direzione{
+        width: 46%;
+    }
+  
+    .mixfoto{
+        width: 46%;
+    }
+
+    .white{
+        font-size: 15px;
+    }
+
+    .sinister{
+        margin-right: 17px;
+    }
+
+
+    #start{
+        margin: 0 5px;
+    }
+
+    .bar{
+        width: 130px;
+        margin: 0 10px;
+    }
+
+    .scrolling{
+        width: 30px;
+    }
+
+    .progress {
+        left: 32%;
+    }
+
+    .timing p{
+        font-size: 10px;
+    }
+
+    .barvolume{
+        width: 95px;
+        margin-left: 10px;
+    }
+
+    .like{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-heart{
+        margin-bottom: 5px;
+    }
+
+
+
+}
 
 
 /* 552px - 537px: Large screens */
+@media (max-width: 552px) {
+
+#spotifylogo{
+    display: none;
+}
+
+#logomobile{
+    display: block;
+    width: 30px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    
+}
+
+nav span{
+    display: none;
+}
+
+.playlist{
+    display: none;
+}
+
+.crea{
+    display: none;
+}
+
+.riga{
+    display: none;
+}
+
+#omino{
+    margin-top: 20px;
+}
+
+
+main{
+    width: calc(100% - 50px);
+}
+
+nav{
+    width: 50px;
+    padding-left: 0;
+    align-items: center;
+}
+
+.datiprofilo{
+    justify-content: center;
+}
+
+footer img{
+    width: 35px;
+}
+
+.sinister{
+    margin-right: 10px;
+}
+
+
+.fa-backward-step{
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.fa-forward-step{
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.fa-shuffle{
+    font-size:15px
+}
+
+.fa-arrow-rotate-right{
+    font-size: 15px;
+}
+
+.bar{
+    width: 110px;
+}
+
+.fa-desktop{
+    margin: 0 5px;
+}
+
+.barvolume{
+    width: 85px;
+}
+
+
+}
